@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://ahkwebsolutions.com/public/uploads/all/vjBJlxtgTC4j8umEGN5MRd6lUuPO8Swjxrysl4uM.gif">
+    <title>Voter Elegibility Checker Using  JS by AHK WEB SOLUTIONS</title>
+    <style>
+        
+        .container {
+            max-width: 400px;
+            border:2px dashed green;
+            margin: auto;
+            height: 39px;
+            height: auto;
+            color:blue;
+            text-align: center;
+            
+    }
+ 
+
+.button{
+    color: green;
+    background-color: yellow;
+    font-size: large;
+    border-radius: 5px;
+    height: 45px;
+    width: 90px;
+    padding-top: -20px;
+    cursor: pointer;
+}
+.button:focus {     
+    background-color:green;
+    color:white;
+
+}
+.none{
+    display: none;
+}
+
+    
+    </style>
+</head>
+<body>
+    
+    <br>
+    <div class="container">
+        <!-- <input type="text" name="name" id="name">
+        <input type="number" id="age" name="age"> -->
+        <br>
+        
+        <div id="result"></div><br>
+        <button class="button"  type="submit" id="btn" onclick="subm()">Calculate Age Now</button>
+
+    </div>
+
+</body>
+
+
+
+
+<script>
+ 
+ 
+    
+ 
+    function subm(){
+       
+
+        document.getElementById("btn").innerHTML = "Calculate Again";
+
+        var namea = prompt("Please enter your Name","");
+        var agea = prompt("Please enter Age","");
+
+
+
+    // var namea = document.getElementById('name').value;
+    // var agea = document.getElementById('age').value;
+    var waitvote = 17;
+    var minage = 18;
+    var maxage = 200;
+
+    if (agea == waitvote) {
+        document.getElementById('result').innerHTML = ["Hello Dear, " +namea+ ".  Your Age Is Now "  +parseFloat(agea)+  " , Please Wait One More Year For Vote."] ; 
+        
+    }else 
+     
+    if (agea >=minage) {
+        document.getElementById('result').innerHTML = ["Hello Dear, " +namea+ ".  Your Age Is Now " +parseFloat(agea)+ " , So, You can Give Vote."] ; 
+        
+    }
+     else{
+        document.getElementById('result').innerHTML = ["Hello Dear, " +namea+ ".  Your Age Is Now " +parseFloat(agea)+ " , So, You can not Give Vote."] ; 
+    }
+    
+    
+   
+
+
+
+
+     
+    }
+</script>
+
+
+</html>
