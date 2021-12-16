@@ -81,16 +81,18 @@
     var maxage = 200;
 
     if (agea == waitvote) {
-        document.getElementById('result').innerHTML = ["Hello Dear, " +namea+ ".  Your Age Is Now "  +parseFloat(agea)+  " , Please Wait One More Year For Vote."] ; 
+        document.getElementById('result').innerHTML = ["Hello Dear, "+"<span style='color:red;font-weight:bolder;' >"  +namea+ "</span>"+".  Your Age Is Now " +"<span style='color:red;font-weight:bolder;' >" +parseFloat(agea)+ "</span>"+ " , Please Wait One More Year For Vote."] ; 
         
     }else 
      
     if (agea >=minage) {
-        document.getElementById('result').innerHTML = ["Hello Dear, " +namea+ ".  Your Age Is Now " +parseFloat(agea)+ " , So, You can Give Vote."] ; 
+        var cangive = "<p class='cangive' >"+
+ "<div >test.test</div> <div class='remove'>[Remove]</div></div>";
+        document.getElementById('result').innerHTML = ["Hello Dear, "+"<span style='color:red;font-weight:bolder;' >"  +namea+ "</span>"+".  Your Age Is Now "+"<span style='color:red;font-weight:bolder;' >"  +parseFloat(agea)+  "</span>"+" , So, You can Give Vote."] ; 
         
     }
      else{
-        document.getElementById('result').innerHTML = ["Hello Dear, " +namea+ ".  Your Age Is Now " +parseFloat(agea)+ " , So, You can not Give Vote."] ; 
+        document.getElementById('result').innerHTML = ["Hello Dear, "+"<span style='color:red;font-weight:bolder;' >"  +namea+ "</span>"+".  Your Age Is Now "+"<span style='color:red;font-weight:bolder;' >"  +parseFloat(agea)+ "</span>"+" , So, You can not Give Vote."] ; 
     }
     
     
