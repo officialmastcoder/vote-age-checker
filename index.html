@@ -79,8 +79,14 @@
     var waitvote = 17;
     var minage = 18;
     var maxage = 200;
+        //Check user Enter Data is Correct Or Not
+     if (agea == "" || agea == null || agea.length == 0)
+     {
+     return false;
+     }else
 
     if (agea == waitvote) {
+        
         document.getElementById('result').innerHTML = ["Hello Dear, "+"<span style='color:red;font-weight:bolder;' >"  +namea+ "</span>"+".  Your Age Is Now " +"<span style='color:red;font-weight:bolder;' >" +parseFloat(agea)+ "</span>"+ " , Please Wait One More Year For Vote."] ; 
         
     }else 
