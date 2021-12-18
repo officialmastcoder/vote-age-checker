@@ -80,14 +80,15 @@
     var minage = 18;
     var maxage = 200;
         //Check user Enter Data is Correct Or Not
-     if (agea == "" || agea == null || agea.length == 0)
+     if (agea == "" || agea == null || agea == 0)
      {
+         alert("Enter Valid Age!");
+         window.location.href = 'https://ahkwebsolutions.github.io/vote-age-checker/';
+     
      return false;
          
-     }else {
-        alert("Enter Valid Age!");
-         window.location.href = 'https://ahkwebsolutions.github.io/vote-age-checker/';
-     }
+     }else 
+        
 
     if (agea == waitvote) {
         
